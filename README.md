@@ -60,7 +60,7 @@ Follow these steps to get a local copy of the project up and running:
 
 1.  Clone the repository:
    
-    git clone [[https://github.com/sheorankriti007/1689e-projects.git](https://github.com/sheorankriti007/1689e-projects.git)]
+    git clone (https://github.com/kritiizx/kriti-marketing-ai)
  
    
 2.  Navigate to the project directory:
