@@ -38,7 +38,7 @@ The entire application is built on a robust and reusable component architecture,
  `Carousel`: A custom-built, highly configurable component for fluid content transitions.
  `Accordion`: For collapsible content sections, enhancing UX in the FAQ with animated indicators.
  `NavLink`: For consistent and interactive navigation across the site, with animated active states.
-* `ToastNotification`: For elegant, non-intrusive system feedback (e.g., form submission success).
+ `ToastNotification`: For elegant, non-intrusive system feedback (e.g., form submission success).
 
 Technologies Used
 
@@ -59,24 +59,24 @@ React Hook Form & Zod
 Follow these steps to get a local copy of the project up and running:
 
 1.  Clone the repository:
-    bash
+   
     git clone [[https://github.com/sheorankriti007/1689e-projects.git](https://github.com/sheorankriti007/1689e-projects.git)]
  
    
 2.  Navigate to the project directory:
-    bash
+   
     cd [your local folder name]
   
   
 3.  Install dependencies:
-    bash
+  
     npm install
-    # or yarn install (if you use yarn)
+    or yarn install (if you use yarn)
 
 4.  Start the development server:
-    bash
+  
     npm run dev
-    # or yarn dev
+    or yarn dev
   
     The application will typically be accessible at `http://localhost:5173`.
 
