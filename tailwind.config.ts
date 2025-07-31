@@ -100,12 +100,23 @@ export default {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
 				'float': 'float 6s ease-in-out infinite',
+				'float-slow': 'floatSlow 8s ease-in-out infinite',
 				'pulse-glow': 'pulseGlow 3s ease-in-out infinite',
-				'particle-float': 'particleFloat 20s linear infinite',
-				'slide-in-up': 'slideInUp 0.6s ease-out',
-				'slide-in-right': 'slideInRight 0.6s ease-out',
+				'pulse-glow-slow': 'pulseGlowSlow 4s ease-in-out infinite',
+				'particle-float': 'particleFloat 25s linear infinite',
+				'particle-wave': 'particleWave 15s ease-in-out infinite',
+				'gradient-shift': 'gradientShift 4s ease infinite',
+				'shimmer': 'shimmer 2s infinite',
+				'typing': 'typing 3.5s steps(40, end)',
+				'slide-in-up': 'slideInUp 0.8s ease-out',
+				'slide-in-right': 'slideInRight 0.8s ease-out',
 				'fade-in': 'fadeIn 0.8s ease-out',
-				'scale-in': 'scaleIn 0.5s ease-out'
+				'scale-in': 'scaleIn 0.6s ease-out',
+				'reveal-up': 'revealUp 0.8s ease-out forwards',
+				'reveal-scale': 'revealScale 0.6s ease-out forwards',
+				'reveal-rotate': 'revealRotate 0.8s ease-out forwards',
+				'bounce-in': 'bounceIn 1s ease-out',
+				'morphing': 'morphing 8s ease-in-out infinite'
 			}
 		}
 	},

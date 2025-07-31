@@ -70,9 +70,9 @@ const TestimonialsSection = () => {
       <div className="container mx-auto px-6">
         
         {/* Section Header */}
-        <div className="text-center max-w-4xl mx-auto mb-16 animate-fade-in">
-          <h2 className="text-4xl lg:text-6xl font-display font-bold mb-6">
-            Voices of <span className="gradient-text">Triumph</span>
+        <div className="text-center max-w-4xl mx-auto mb-16 reveal-up">
+          <h2 className="text-4xl lg:text-6xl font-display font-bold mb-6 shimmer">{/* ...keep existing content... */}
+            Voices of <span className="gradient-text-animated">Triumph</span>{/* ...keep existing content... */}
           </h2>
           <p className="text-xl text-muted-foreground leading-relaxed">
             Discover how visionary leaders are achieving unprecedented success with ADmyBRAND AI Suite
@@ -93,7 +93,7 @@ const TestimonialsSection = () => {
             >
               {testimonials.map((testimonial, index) => (
                 <div key={index} className="w-full flex-shrink-0">
-                  <Card variant="testimonial" className="mx-4 animate-scale-in">
+                  <Card variant="testimonial" className="mx-4 reveal-scale magnetic glow-hover shimmer">{/* ...keep existing content... */}
                     <CardContent className="p-12 text-center">
                       
                       {/* Quote Icon */}
@@ -107,7 +107,7 @@ const TestimonialsSection = () => {
                       </div>
                       
                       {/* Quote */}
-                      <blockquote className="text-2xl lg:text-3xl font-light leading-relaxed mb-8 text-foreground">
+                      <blockquote className="text-2xl lg:text-3xl font-light leading-relaxed mb-8 text-foreground typing-effect">{/* ...keep existing content... */}
                         "{testimonial.quote}"
                       </blockquote>
                       
@@ -116,11 +116,11 @@ const TestimonialsSection = () => {
                         <img 
                           src={testimonial.image} 
                           alt={testimonial.name}
-                          className="w-16 h-16 rounded-full object-cover ring-2 ring-primary/20"
-                        />
+                          className="w-16 h-16 rounded-full object-cover ring-2 ring-primary/20 float"
+                        />{/* ...keep existing content... */}
                         <div className="text-left">
-                          <div className="font-semibold text-lg gradient-text">
-                            {testimonial.name}
+                          <div className="font-semibold text-lg gradient-text-animated">
+                            {testimonial.name}{/* ...keep existing content... */}
                           </div>
                           <div className="text-muted-foreground">
                             {testimonial.title}

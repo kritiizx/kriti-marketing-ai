@@ -46,9 +46,9 @@ const FAQSection = () => {
       <div className="container mx-auto px-6">
         
         {/* Section Header */}
-        <div className="text-center max-w-4xl mx-auto mb-16 animate-fade-in">
-          <h2 className="text-4xl lg:text-6xl font-display font-bold mb-6">
-            Clarity & <span className="gradient-text">Confidence</span>
+        <div className="text-center max-w-4xl mx-auto mb-16 reveal-up">
+          <h2 className="text-4xl lg:text-6xl font-display font-bold mb-6 shimmer">{/* ...keep existing content... */}
+            Clarity & <span className="gradient-text-animated">Confidence</span>{/* ...keep existing content... */}
           </h2>
           <p className="text-xl text-muted-foreground leading-relaxed">
             Get instant answers to your most important questions about ADmyBRAND AI Suite
@@ -56,15 +56,14 @@ const FAQSection = () => {
         </div>
 
         {/* FAQ Accordion */}
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-4xl mx-auto stagger-children">{/* ...keep existing content... */}
           <Accordion type="single" collapsible className="space-y-4">
             {faqs.map((faq, index) => (
               <AccordionItem 
                 key={index} 
                 value={`item-${index}`}
-                className="glass glass-glow border rounded-xl px-6 animate-slide-in-up"
-                style={{ animationDelay: `${index * 0.1}s` }}
-              >
+                className="glass glass-glow border rounded-xl px-6 magnetic glow-hover shimmer reveal-rotate"
+              >{/* ...keep existing content... */}
                 <AccordionTrigger className="text-left hover:text-primary transition-colors text-lg font-semibold py-6">
                   {faq.question}
                 </AccordionTrigger>

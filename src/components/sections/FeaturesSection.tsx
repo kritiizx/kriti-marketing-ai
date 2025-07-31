@@ -67,9 +67,9 @@ const FeaturesSection = () => {
       <div className="container mx-auto px-6">
         
         {/* Section Header */}
-        <div className="text-center max-w-4xl mx-auto mb-20 animate-fade-in">
-          <h2 className="text-4xl lg:text-6xl font-display font-bold mb-6">
-            The <span className="gradient-text">AI Arsenal</span> That Powers Success
+        <div className="text-center max-w-4xl mx-auto mb-20 reveal-up">
+          <h2 className="text-4xl lg:text-6xl font-display font-bold mb-6 shimmer">{/* ...keep existing content... */}
+            The <span className="gradient-text-animated">AI Arsenal</span> That Powers Success{/* ...keep existing content... */}
           </h2>
           <p className="text-xl text-muted-foreground leading-relaxed">
             Discover the revolutionary features that transform ordinary marketing into extraordinary market dominance. Each tool is precision-engineered for the modern digital landscape.
@@ -77,22 +77,21 @@ const FeaturesSection = () => {
         </div>
         
         {/* Features Grid */}
-        <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-8 stagger-children">{/* ...keep existing content... */}
           {features.map((feature, index) => {
             const Icon = feature.icon
             return (
               <Card 
                 key={index}
                 variant="feature" 
-                className="animate-scale-in hover:cursor-pointer"
-                style={{ animationDelay: `${index * 0.1}s` }}
-              >
+                className="magnetic glow-hover shimmer reveal-rotate relative overflow-hidden"
+              >{/* ...keep existing content... */}
                 <CardHeader>
-                  <div className={`w-16 h-16 rounded-xl bg-gradient-to-br ${feature.gradient} p-4 mb-4 group-hover:scale-110 transition-transform`}>
-                    <Icon className="h-8 w-8 text-white" />
+                  <div className={`w-16 h-16 rounded-xl bg-gradient-to-br ${feature.gradient} p-4 mb-4 group-hover:scale-110 transition-transform bounce-in float`}>
+                    <Icon className="h-8 w-8 text-white" />{/* ...keep existing content... */}
                   </div>
-                  <CardTitle className="text-xl font-display font-semibold group-hover:text-primary transition-colors">
-                    {feature.title}
+                  <CardTitle className="text-xl font-display font-semibold group-hover:text-primary transition-colors gradient-text-animated">
+                    {feature.title}{/* ...keep existing content... */}
                   </CardTitle>
                 </CardHeader>
                 <CardContent>

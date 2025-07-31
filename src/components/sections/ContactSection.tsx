@@ -75,9 +75,9 @@ const ContactSection = () => {
       <div className="container mx-auto px-6">
         
         {/* Section Header */}
-        <div className="text-center max-w-4xl mx-auto mb-16 animate-fade-in">
-          <h2 className="text-4xl lg:text-6xl font-display font-bold mb-6">
-            Connect & <span className="gradient-text">Convert</span>
+        <div className="text-center max-w-4xl mx-auto mb-16 reveal-up">
+          <h2 className="text-4xl lg:text-6xl font-display font-bold mb-6 shimmer">{/* ...keep existing content... */}
+            Connect & <span className="gradient-text-animated">Convert</span>{/* ...keep existing content... */}
           </h2>
           <p className="text-xl text-muted-foreground leading-relaxed">
             Ready to transform your marketing with AI? Let's start your journey to unprecedented growth.
@@ -87,10 +87,10 @@ const ContactSection = () => {
         <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12">
           
           {/* Contact Form */}
-          <Card variant="hero" className="animate-slide-in-up">
+          <Card variant="hero" className="reveal-scale magnetic glow-hover shimmer">{/* ...keep existing content... */}
             <CardHeader>
-              <CardTitle className="text-2xl gradient-text">
-                Start Your AI Journey
+              <CardTitle className="text-2xl gradient-text-animated shimmer">
+                Start Your AI Journey{/* ...keep existing content... */}
               </CardTitle>
               <CardDescription className="text-base">
                 Tell us about your vision and we'll show you how ADmyBRAND can make it reality
@@ -155,10 +155,10 @@ const ContactSection = () => {
           </Card>
 
           {/* Contact Information */}
-          <div className="space-y-8 animate-slide-in-right">
+          <div className="space-y-8 reveal-scale stagger-children">{/* ...keep existing content... */}
             
-            <Card variant="feature">
-              <CardContent className="p-8">
+            <Card variant="feature" className="magnetic glow-hover shimmer">
+              <CardContent className="p-8">{/* ...keep existing content... */}
                 <div className="flex items-start gap-4">
                   <div className="p-3 rounded-lg bg-gradient-primary">
                     <Mail className="h-6 w-6 text-white" />

@@ -85,9 +85,9 @@ const PricingSection = () => {
       <div className="container mx-auto px-6">
         
         {/* Section Header */}
-        <div className="text-center max-w-4xl mx-auto mb-16 animate-fade-in">
-          <h2 className="text-4xl lg:text-6xl font-display font-bold mb-6">
-            Choose Your <span className="gradient-text">AI Advantage</span>
+        <div className="text-center max-w-4xl mx-auto mb-16 reveal-up">
+          <h2 className="text-4xl lg:text-6xl font-display font-bold mb-6 shimmer">{/* ...keep existing content... */}
+            Choose Your <span className="gradient-text-animated">AI Advantage</span>{/* ...keep existing content... */}
           </h2>
           <p className="text-xl text-muted-foreground leading-relaxed mb-8">
             Transparent, intelligent pricing that scales with your ambition. Experience the power of AI-driven growth.
@@ -115,10 +115,10 @@ const PricingSection = () => {
         </div>
 
         {/* Interactive Pricing Calculator */}
-        <Card variant="hero" className="max-w-4xl mx-auto mb-16 animate-scale-in">
+        <Card variant="hero" className="max-w-4xl mx-auto mb-16 reveal-scale magnetic glow-hover">{/* ...keep existing content... */}
           <CardHeader>
-            <CardTitle className="text-2xl text-center gradient-text">
-              Intelligent Pricing Calculator
+            <CardTitle className="text-2xl text-center gradient-text-animated shimmer">
+              Intelligent Pricing Calculator{/* ...keep existing content... */}
             </CardTitle>
             <CardDescription className="text-center text-lg">
               Customize your AI arsenal to match your exact needs
@@ -130,8 +130,8 @@ const PricingSection = () => {
             <div className="space-y-4">
               <div className="flex justify-between items-center">
                 <label className="text-lg font-semibold">Targeted Audiences</label>
-                <span className="text-xl font-bold gradient-text">{audiences[0]}M people</span>
-              </div>
+                <span className="text-xl font-bold gradient-text-animated pulse-glow">{audiences[0]}M people</span>
+              </div>{/* ...keep existing content... */}
               <Slider
                 value={audiences}
                 onValueChange={setAudiences}
@@ -146,8 +146,8 @@ const PricingSection = () => {
             <div className="space-y-4">
               <div className="flex justify-between items-center">
                 <label className="text-lg font-semibold">AI Content Generation Credits</label>
-                <span className="text-xl font-bold gradient-text">{aiCredits[0]} credits/month</span>
-              </div>
+                <span className="text-xl font-bold gradient-text-animated pulse-glow">{aiCredits[0]} credits/month</span>
+              </div>{/* ...keep existing content... */}
               <Slider
                 value={aiCredits}
                 onValueChange={setAiCredits}
@@ -162,8 +162,8 @@ const PricingSection = () => {
             <div className="space-y-4">
               <div className="flex justify-between items-center">
                 <label className="text-lg font-semibold">Advanced Analytics Modules</label>
-                <span className="text-xl font-bold gradient-text">{analyticsModules[0]} modules</span>
-              </div>
+                <span className="text-xl font-bold gradient-text-animated pulse-glow">{analyticsModules[0]} modules</span>
+              </div>{/* ...keep existing content... */}
               <Slider
                 value={analyticsModules}
                 onValueChange={setAnalyticsModules}
@@ -178,7 +178,7 @@ const PricingSection = () => {
         </Card>
 
         {/* Pricing Cards */}
-        <div className="grid lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+        <div className="grid lg:grid-cols-3 gap-8 max-w-7xl mx-auto stagger-children">{/* ...keep existing content... */}
           {pricingTiers.map((tier, index) => {
             const Icon = tier.icon
             const price = calculatePrice(tier.basePrice)
@@ -187,9 +187,8 @@ const PricingSection = () => {
               <Card 
                 key={index}
                 variant="pricing" 
-                className={`relative ${tier.highlighted ? 'ring-2 ring-primary shadow-2xl shadow-primary/20 scale-105' : ''} animate-slide-in-up`}
-                style={{ animationDelay: `${index * 0.2}s` }}
-              >
+                className={`relative magnetic glow-hover reveal-rotate shimmer ${tier.highlighted ? 'ring-2 ring-primary shadow-2xl shadow-primary/20 scale-105 pulse-glow-slow' : ''}`}
+              >{/* ...keep existing content... */}
                 {tier.badge && (
                   <Badge 
                     className={`absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1 ${
@@ -201,16 +200,16 @@ const PricingSection = () => {
                 )}
                 
                 <CardHeader className="text-center">
-                  <div className="mx-auto mb-4 p-4 rounded-xl bg-gradient-primary w-16 h-16 flex items-center justify-center">
-                    <Icon className="h-8 w-8 text-white" />
+                  <div className="mx-auto mb-4 p-4 rounded-xl bg-gradient-primary w-16 h-16 flex items-center justify-center bounce-in float">
+                    <Icon className="h-8 w-8 text-white" />{/* ...keep existing content... */}
                   </div>
                   <CardTitle className="text-2xl font-display">{tier.name}</CardTitle>
                   <CardDescription className="text-base">{tier.description}</CardDescription>
                   
                   <div className="pt-4">
-                    <div className="text-5xl font-bold gradient-text">
+                    <div className="text-5xl font-bold gradient-text-animated pulse-glow">
                       ${price.toLocaleString()}
-                    </div>
+                    </div>{/* ...keep existing content... */}
                     <div className="text-muted-foreground">
                       per {isAnnual ? 'year' : 'month'}
                     </div>
