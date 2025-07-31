@@ -27,7 +27,7 @@ FAQ Section: An intuitive, accordion-style section addressing common user querie
 Contact Form: A streamlined, validated contact form for direct inquiries, providing sleek, real-time feedback via a custom toast notification system upon submission.
 Footer: A comprehensive and elegantly designed footer with essential navigation links, prominent, glowing social media icons, and copyright information.
 
- Component System
+Component System
 
 The entire application is built on a robust and reusable component architecture, ensuring scalability, maintainability, and design consistency. Each component is crafted to adhere to the overarching dark, futuristic, and premium aesthetic, incorporating glassmorphism and subtle animations. Key components developed include:
 
@@ -40,7 +40,7 @@ The entire application is built on a robust and reusable component architecture,
  `NavLink`: For consistent and interactive navigation across the site, with animated active states.
 * `ToastNotification`: For elegant, non-intrusive system feedback (e.g., form submission success).
 
-## Technologies Used
+Technologies Used
 
 This project leverages a modern and efficient tech stack to deliver a high-performance and visually stunning application:
 
@@ -51,6 +51,8 @@ Tailwind CSS
 shadcn/ui
 Framer Motion
 React Hook Form & Zod
+
+
 
  Setup and Local Development
 
@@ -84,26 +86,6 @@ Follow these steps to get a local copy of the project up and running:
 
 
 
-
-If you want to work locally using your own IDE, you can clone this repo and push changes
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
 
 
 
