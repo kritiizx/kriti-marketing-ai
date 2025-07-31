@@ -1,20 +1,61 @@
 import { Button } from "@/components/ui/enhanced-button"
 import { Card } from "@/components/ui/enhanced-card"
-import { ArrowRight, Zap, Target, TrendingUp } from "lucide-react"
+import { ArrowRight, Zap, Target, TrendingUp, Users, Activity, BarChart } from "lucide-react"
 import heroImage from "@/assets/hero-ai-network.jpg"
+import businessAutomation from "@/assets/ai-business-automation.jpg"
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center particles overflow-hidden">
+    <section className="relative min-h-screen flex flex-col particles overflow-hidden">
       {/* Background Image */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-60"
         style={{ backgroundImage: `url(${heroImage})` }}
       />
       
-      {/* Content Grid */}
-      <div className="container mx-auto px-6 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+      {/* Active Users & Metrics Bar */}
+      <div className="relative z-10 py-4 border-b border-border/30">
+        <div className="container mx-auto px-6">
+          <div className="flex flex-col sm:flex-row justify-center items-center gap-8 text-center animate-fade-in">
+            
+            <div className="flex items-center gap-3">
+              <div className="p-2 rounded-lg bg-gradient-primary">
+                <Users className="h-5 w-5 text-white" />
+              </div>
+              <div className="text-left">
+                <div className="text-2xl font-bold gradient-text">2.5M+</div>
+                <div className="text-sm text-muted-foreground">Active Users</div>
+              </div>
+            </div>
+            
+            <div className="flex items-center gap-3">
+              <div className="p-2 rounded-lg bg-gradient-accent">
+                <Activity className="h-5 w-5 text-white" />
+              </div>
+              <div className="text-left">
+                <div className="text-2xl font-bold gradient-text">98.5%</div>
+                <div className="text-sm text-muted-foreground">Uptime</div>
+              </div>
+            </div>
+            
+            <div className="flex items-center gap-3">
+              <div className="p-2 rounded-lg bg-gradient-primary">
+                <BarChart className="h-5 w-5 text-white" />
+              </div>
+              <div className="text-left">
+                <div className="text-2xl font-bold gradient-text">450%</div>
+                <div className="text-sm text-muted-foreground">Avg ROI Increase</div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      
+      {/* Main Content Grid */}
+      <div className="flex-1 flex items-center">
+        <div className="container mx-auto px-6 relative z-10">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">{/* ...keep existing content... */}
           
           {/* Left Content */}
           <div className="space-y-8 animate-slide-in-up">
@@ -45,9 +86,19 @@ const HeroSection = () => {
             </div>
           </div>
           
-          {/* Right Content - Floating Data Chips */}
+          {/* Right Content - Business Automation & Data Chips */}
           <div className="relative lg:h-[600px] flex items-center justify-center">
-            <div className="space-y-6 animate-fade-in">
+            
+            {/* Business Automation Background */}
+            <div className="absolute inset-0 flex items-center justify-center">
+              <img 
+                src={businessAutomation} 
+                alt="AI Business Automation"
+                className="w-full h-full object-cover rounded-2xl opacity-30"
+              />
+            </div>
+            
+            <div className="relative space-y-6 animate-fade-in">
               
               {/* Data Chip 1 */}
               <Card variant="hero" className="w-64 float pulse-glow animate-slide-in-right" style={{ animationDelay: '0.2s' }}>
@@ -93,6 +144,7 @@ const HeroSection = () => {
           
         </div>
       </div>
+    </div>
     </section>
   )
 }

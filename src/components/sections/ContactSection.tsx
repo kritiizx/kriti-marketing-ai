@@ -201,9 +201,9 @@ const ContactSection = () => {
                     <h3 className="text-xl font-semibold mb-2">Visit Us</h3>
                     <p className="text-muted-foreground leading-relaxed">
                       AI Innovation Center<br />
-                      123 Future Tech Boulevard<br />
-                      San Francisco, CA 94105<br />
-                      United States
+                      Sector 62, C-Block<br />
+                      Noida, Uttar Pradesh 201309<br />
+                      India
                     </p>
                   </div>
                 </div>
